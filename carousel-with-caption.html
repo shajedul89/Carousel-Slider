@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* round caption-indicator
+    .carousel-indicators li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #0000ff;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+}
+.carousel-indicators .active {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    background-color: #ffff99;
+}
+*/
+
+        /* carousel-indicator-color-change*/
+
+        .carousel-indicators li {
+            background-color: green;
+        }
+
+        .carousel-indicators .active {
+            background-color: red;
+        }
+
+        /*        end carousel indicator color change procedure*/
+
+        .carousel-control-prev {
+            color: red;
+        }
+
+        /*
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+        height: 30px;
+        width: 30px;
+
+        out line
+        outline: red;
+        background-color: rgba(242, 5, 5, 0.7);
+
+        background-size: 100%, 100%;
+        border-radius: 50%;
+        border: 1px solid black;
+        }
+*/
+
+
+
+/* white background carausol color change
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            height: 30px;
+            width: 30px;
+            outline: black;
+            background-size: 100%, 100%;
+            border-radius: 50%;
+              border: 1px solid green;
+            background-image: none;
+        }
+
+        .carousel-control-next-icon:after {
+            content: '>';
+            font-size: 50px;
+            color: red;
+            
+            font-weight: 800;
+        }
+
+        .carousel-control-prev-icon:after {
+            content: '<';
+            font-size: 50px;
+            color: red;
+            
+            font-weight: 800;
+        }
+*/
+
+    </style>
+</head>
+
+<body>
+
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/2.jpg" width="100%" height="400px" alt="Los Angeles">
+                <div class="carousel-caption mb-5 text-white font-weight-bold">
+                    <h3 class="display-4">Los Angeles</h3>
+                    <p>We had such a great time in LA!</p>
+                    <p class="btn btn-success mt-3">Leran More</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/1.jpg" width="100%" height="400px" alt="Chicago">
+
+                <!-- carasoul caption text -->
+                <div class="carousel-caption mb-5 text-white font-weight-bold text-left">
+                    <h3 class="display-4">Los Angeles</h3>
+                    <p>We had such a great time in LA!</p>
+                    <p class="btn btn-success mt-3">Leran More</p>
+                </div>
+
+            </div>
+
+
+            <div class="carousel-item">
+                <img src="images/3.jpg" width="100%" height="400px" alt="New York">
+
+                <div class="carousel-caption mb-5 text-white font-weight-bold text-right ">
+                    <h3 class="display-4">Los Angeles</h3>
+                    <p>We had such a great time in LA!</p>
+                    <p class="btn btn-success mt-3 ">Leran More</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $('.carousel').carousel({
+            interval: 2000,
+            wrap: true,
+        });
+
+    </script>
+    <!--
+    <script>
+        $('.carousel').carousel({
+            interval: 500,
+            wrap: false, // to stop slider repetedly use wrap : false;
+            pause: hover, //stop slide when mouse on slide
+            keyboard:true // to stop use keybaord array use false
+
+        });
+
+    </script>
+-->
+</body>
+
+</html>
