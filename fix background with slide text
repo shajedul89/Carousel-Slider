@@ -1,0 +1,46 @@
+<div class="carousel-inner">
+        <div class="img" style="background-image: url('img/1.jpg');">
+        <div class="carousel-item active">
+            <img src="img/1.jpg" width="100%" style="visibility:hidden;" height="400px" alt="Los Angeles">
+            <div class="carousel-caption  mb-5 text-white font-weight-bold text-left">
+                <h3 class="display-4">Los Angeles</h3>
+                <p>We had such a great time in LA!</p>
+                <p class="btn btn-success mt-3">Leran More</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/1.jpg" width="100%" style="visibility:hidden;"  height="400px" alt="Chicago">
+
+            <!-- carasoul caption text -->
+            <div class="carousel-caption  mb-5 text-white font-weight-bold text-left">
+                <h3 class="display-4">Los Angeles</h3>
+                <p>We had such a great time in LA!</p>
+                <p class="btn btn-success mt-3">Leran More</p>
+            </div>
+
+        </div>
+
+
+        <div class="carousel-item">
+            <img src="img/1.jpg" width="100%" style="visibility:hidden;"  height="400px" alt="New York">
+
+            <div class="carousel-caption mb-5 text-white font-weight-bold text-left ">
+                <h3 class="display-4">Los Angeles</h3>
+                <p>We had such a great time in LA!</p>
+                <p class="btn btn-success mt-3 ">Leran More</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+
+</div>
+
+<!-- slider section end -->
